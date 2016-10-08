@@ -34,6 +34,7 @@ public class Game extends JPanel{
 			@Override
 			public void run() {
 				if (timer_stop) {
+					repaint();
 					return;
 				}
 				for (int i = 0; i < charList.size(); i++) {
